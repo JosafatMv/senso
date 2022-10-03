@@ -2,8 +2,8 @@ import React, { Suspense } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { Answer } from '../Pages/Answer';
+import { AnswerRegister } from '../Pages/AnswerRegister';
 import { Home } from '../Pages/Home';
-import { SurveryRegister } from '../Pages/SurveryRegister';
 import { Survey } from '../Pages/Survey';
 
 export const AppRouter = () => {
@@ -16,7 +16,7 @@ export const AppRouter = () => {
 						<Route path='/survey/:key' element={<Survey />} />
 						<Route
 							path='/survey/:key/register'
-							element={<SurveryRegister />}
+							element={<AnswerRegister />}
 						/>
 						<Route path='/answer/:key/:id' element={<Answer />} />
 

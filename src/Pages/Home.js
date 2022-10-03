@@ -1,5 +1,9 @@
 import { useEffect, useState } from 'react';
+import { Loader } from '../components/Loader';
 import { Table } from '../components/surveys/Table';
+
+import '../assets/css/Home.css';
+import { Surveys } from '../components/surveys/Surveys';
 
 export const Home = () => {
 	const BASE_API = 'http://localhost:4000/api';
@@ -23,7 +27,7 @@ export const Home = () => {
 	}, []);
 
 	if (isLoading) {
-		return <div>Cargando...</div>;
+		return <Loader />;
 	}
 
 	if (surveys.length === 0) {
@@ -31,11 +35,18 @@ export const Home = () => {
 	}
 
 	return (
-		<div className='container mt-5'>
-			<h1>Encuestas</h1>
+		<div className='container my-5'>
+			<h1 className='text-center'>
+				Sistema de Encuesta de Calidad de Software - Encuestas
+			</h1>
 
-			<div className='table-responsive'>
+			{/* <div className='table-responsive'>
 				{surveys && <Table surveys={surveys} />}
+			</div> */}
+
+			<div className='container'>
+				
+				<Surveys surveys={surveys} />
 			</div>
 		</div>
 	);

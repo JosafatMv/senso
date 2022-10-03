@@ -12,7 +12,6 @@ export const Answer = ({
 	seguridad,
 	compatibilidad,
 	total,
-	status,
 	survey_key,
 	id_answer,
 	index,
@@ -33,7 +32,6 @@ export const Answer = ({
 			<td>{seguridad}</td>
 			<td>{compatibilidad}</td>
 			<td>{total}</td>
-			<td>{status}</td>
 		</tr>
 	);
 };

@@ -1,0 +1,18 @@
+.table-answers {
+	background-color: #fff;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 15px;
+}
+
+.answer-headers tr th:first-child {
+	border-radius: 15px 0px 0px 0px;
+}
+
+.answer-headers tr th:last-child {
+	border-radius: 0px 15px 0px 0px;
+}
+
+.table-answers tbody tr td,
+.table-answers tbody tr th {
+	padding: 15px 0px;
+}

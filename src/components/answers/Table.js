@@ -1,12 +1,12 @@
 import { Answer } from './Answer';
 
-export const Table = ({ answers }) => {
-	console.log(answers);
+import '../../assets/css/TableAnswers.css';
 
+export const Table = ({ answers }) => {
 	return (
-		<table className='table'>
-			<thead>
-				<tr className='text-center'>
+		<table className='table table-answers'>
+			<thead className='answer-headers'>
+				<tr className='text-center bg-table-sup'>
 					<th scope='col'>#</th>
 					<th scope='col'>Cliente</th>
 					<th scope='col'>Escuela</th>
