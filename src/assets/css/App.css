@@ -10,3 +10,67 @@ body {
 p {
 	margin-bottom: 0px !important;
 }
+
+.custom-table {
+	background-color: #fff;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 15px;
+}
+
+.custom-tabletr th:first-child {
+	border-radius: 15px 0px 0px 0px;
+}
+
+.custom-table tr th:last-child {
+	border-radius: 0px 15px 0px 0px;
+}
+
+.custom-table tbody tr td,
+.custom-table tbody tr th {
+	padding: 15px 0px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.circle-red {
+	background-color: #990000;
+}
+.circle-orange {
+	background-color: #ff7a00;
+}
+
+.circle-yellow {
+	background-color: #fae100;
+}
+
+.circle-green {
+	background-color: #578903;
+}
+
+.circle-blue {
+	background-color: #0773fe;
+}
+
+.circle {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.text-active {
+	color: #0b4fa7;
+}
+
+.text-finish {
+	color: #8c1c1c;
+}
+
+.answer-pill {
+	height: 25px;
+	width: 90px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	display: inline-block;
+	vertical-align: middle;
+}

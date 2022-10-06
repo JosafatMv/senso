@@ -11,25 +11,8 @@ export const Survey = ({ surveyKey, name, status, i }) => {
 	};
 
 	return (
-		// <tr className='text-center'>
-		// 	<th scope='row'>{index + 1}</th>
-		// 	<td>
-		// 		<Link to={`/survey/${surveyKey}`}>{name}</Link>
-		// 	</td>
-		// 	<td>
-		// 		{status === '1' ? (
-		// 			<span className='bg-success p-1 rounded text-white'>
-		// 				Activa
-		// 			</span>
-		// 		) : (
-		// 			<span className='bg-danger p-1 rounded text-white'>
-		// 				Finalizada
-		// 			</span>
-		// 		)}
-		// 	</td>
-		// </tr>
 		<div
-			className={`col-12 d-flex justify-content-between py-4 align-items-center ${isPair()}  table-row`}
+			className={`col-12 d-flex justify-content-between py-4 align-items-center ${isPair()} table-row`}
 		>
 			<p className='fw-bold text-start'>
 				{surveyKey} - {name}

@@ -1,0 +1,14 @@
+/* .table-header {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+} */
+
+.table-header h1 {
+	/* justify-self: center; */
+	margin-bottom: 0px;
+}
+
+.table-header .survey-buttons {
+	margin-bottom: 0px;
+}

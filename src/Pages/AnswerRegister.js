@@ -67,7 +67,7 @@ export const AnswerRegister = () => {
 				setIsLoading(false);
 
 				if (data.ok) {
-					navigate(`/survey/${key}`);
+					navigate(`/survey/${key}?register=true`);
 				}
 			}
 		});
@@ -85,7 +85,7 @@ export const AnswerRegister = () => {
 			cancelButtonText: 'Cancelar',
 		}).then(async (result) => {
 			if (result.isConfirmed) {
-				navigate(`/survey/${key}`);
+				navigate(`/survey/${key}?finish=true`);
 			}
 		});
 	};
@@ -105,7 +105,7 @@ export const AnswerRegister = () => {
 						<Link to={`/survey/${key}`}>{key}</Link>
 					</li>
 					<li className='breadcrumb-item active' aria-current='page'>
-						Respuesta
+						Registro de respuesta
 					</li>
 				</ol>
 			</nav>
